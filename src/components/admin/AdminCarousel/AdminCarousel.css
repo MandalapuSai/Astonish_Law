@@ -1,0 +1,166 @@
+.admin-carousel-heading {
+  text-align: center;
+}
+
+.admin-heading-bg {
+  display: inline-block;
+  background-color: #2c5f9e;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 5px 13px;
+  border-radius: 4px;
+}
+
+.carousel-label {
+  font-weight: 600;
+}
+
+.carousel-input-field {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #878787;
+}
+
+.carousel-input-field:focus {
+  box-shadow: none !important;
+  border: 2px solid #2c5f9e !important;
+}
+
+.selected-img-preview {
+  width: 120px;
+  height: 70px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.selected-img-icon-remove {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 10px;
+  background-color: #ed1d1d;
+  color: #fff;
+}
+
+.selected-img-icon-remove:hover {
+  background-color: #c41414;
+}
+
+.carousel-button {
+  padding: 8px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  height: 41px;
+  background-color: #159805 !important;
+  border: #159805;
+  margin-top: 32px;
+}
+
+.carousel-button:hover {
+  background-color: #128d04 !important;
+}
+
+.carousel-cancel-button {
+  padding: 8px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  height: 41px;
+  background-color: #ed1d1d !important;
+  border: #ed1d1d;
+  margin-top: 32px;
+}
+
+.carousel-cancel-button:hover {
+  background-color: #c41414 !important;
+}
+
+.carousel-table thead th {
+  background-color: #2c5f9e !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* .carousel-table tbody tr:hover td {
+  background-color: #dff5e5 !important;
+  color: #1e3b1e !important;
+  font-weight: 500;
+} */
+
+.carousel-row {
+  font-size: 16px;
+  color: #333;
+}
+
+.carousel-table-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.admin-carousel-action-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.admin-carousel-edit-icon {
+  color: #2c5f9e;
+}
+
+.admin-carousel-delete-icon {
+  color: #ed1d1d;
+}
+
+.admin-carousel-action-icon:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.carousel-delete-model {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.carousel-delete-model-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  border: none;
+}
+
+.carousel-yes-delete-model-button {
+  background-color: #ed1d1d;
+  border: none;
+}
+
+.carousel-yes-delete-model-button:hover {
+  background-color: #c41414 !important;
+}
+
+.carousel-cancel-delete-model-button {
+  background-color: #29A71A;
+  border: none;
+}
+
+.carousel-cancel-delete-model-button:hover {
+  background-color: #128d04 !important;
+}
+
+@media (max-width: 480px) {
+  .admin-carousel-delete {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,105 @@
+/* Ensure container has proper alignment */
+.homeblog-container {
+    padding: 20px 50px;
+}
+
+/* Slider Wrapper */
+.homeblog-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border: none;
+}
+
+/* Track for sliding items */
+.homeblog-track {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Each blog slide */
+.homeblog-slide {
+    flex: 0 0 33.3333%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Card Styling */
+.homeblog-card {
+    color: black;
+    border: none !important;
+    text-align: start;
+    max-width: 320px;
+    width: 100%;
+}
+
+.homeblog-img {
+    height: 200px;
+    object-fit: cover;
+}
+.card-body{
+    padding: 10px 0px !important;
+}
+.homeblog-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.homeblog-text {
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+/* 🟢 Ad Banner Styling */
+.homeblog-ad-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+}
+.homeblog-ad-img {
+  width: 100%;
+  max-width: 300px; /* Adjust max width as needed */
+  height: 470px;
+  display: block;
+  margin-top: 0; /* Ensures it starts from the top */
+}
+
+/* Dots Below Reviews */
+.homeblog-dots {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dot.active {
+    background-color: black;
+}
+
+.homepageBlog-button {
+    background-color: black !important;
+    color: white !important;
+    padding: 8px 15px !important;
+    border: none !important;
+    border-radius: 1px !important;
+    font-size: 12px;
+  }
+  
+  .homepageBlog-button:hover {
+    background-color: #ccc !important;
+    color: black !important;
+    padding: 6px 13px !important;
+    border: 2px solid black !important;
+  }
+

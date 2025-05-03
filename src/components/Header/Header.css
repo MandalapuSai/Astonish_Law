@@ -1,0 +1,128 @@
+/* ===== HEADER STYLES ===== */
+.header-container {
+  background: #fff;
+  padding: 10px 50px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== LOGO ===== */
+.header-logo {
+  width: 120px !important;
+  height: auto;
+}
+
+/* ===== NAVIGATION MENU ===== */
+.navbar-nav .nav-link {
+  color: #000 !important;
+  font-weight: 500;
+  padding: 10px 15px !important;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+.dropdown-arrow{
+  width: 20px;
+  height: 20px;
+}
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: #000;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 85%;
+}
+.custom-dropdown .nav-link::after {
+  content: none !important;
+}
+.navbar-nav .nav-item:not(.custom-dropdown):hover .nav-link::after {
+  width: 85%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #000 !important;
+}
+
+/* ===== DROPDOWN MENU ===== */
+.custom-dropdown .dropdown-menu {
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+}
+
+.custom-dropdown.show .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add arrow beside dropdown */
+.dropdown-arrow {
+  margin-left: -3px;
+  vertical-align: middle;
+}
+
+/* Dropdown Item Hover */
+.navbar-nav .dropdown-item {
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background: #f6f6f6;
+  color: #000;
+}
+
+/* ===== MOBILE MENU TOGGLE ===== */
+.navbar-toggler {
+  border: 1px solid #807b7b;
+  padding: 8px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.navbar-toggler:hover {
+  background: #000;
+  color: white;
+}
+
+/* Mobile Dropdown Styling */
+@media (max-width: 768px) {
+  .header-container {
+      padding: 10px 20px;
+  }
+
+  .navbar-nav .nav-link {
+      text-align: start;
+      padding: 8px;
+  }
+
+  .navbar-nav .dropdown-menu {
+      position: static !important;
+      box-shadow: none;
+      width: 100%;
+      text-align: center;
+  }
+
+  .navbar-nav .dropdown-item {
+      padding: 10px;
+  }
+  .header-container {
+      padding: 20px !important;
+  }
+
+  .navbar-nav .nav-link::after { 
+    background-color: #fff ;
+  }
+}

@@ -1,0 +1,96 @@
+/* Carousel Wrapper */
+.carousel-slider {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Image Styling */
+.carousel-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+/* Content Styling */
+.carousel-content {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    text-align: left;
+    max-width: 600px;
+    color: white;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Title & Description */
+.carousel-title {
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.carousel-desc {
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) { 
+    .carousel-content {
+        top: 30%;
+        left: 5%;
+    }
+    .carousel-title {
+        font-size: 32px;
+    }
+    .carousel-desc {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .carousel-slider, .carousel-image {
+        height: 50vh;
+    }
+    .carousel-content {
+        top: 25%;
+        left: 5%;
+        max-width: 90%;
+    }
+    .carousel-title {
+        font-size: 24px;
+    }
+    .carousel-desc {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) { 
+    .carousel-slider, .carousel-image {
+        height: 30vh;
+    }
+    .carousel-content {
+        top: 15%;
+    }
+    .carousel-title {
+        font-size: 18px;
+    }
+    .carousel-desc {
+        font-size: 10px;
+    }
+}

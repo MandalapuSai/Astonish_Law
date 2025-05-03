@@ -1,0 +1,119 @@
+/* Full-page background */
+.admin-login-background {
+  background-image: url("../../../assets/admin-login.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 8vw;
+}
+
+
+.admin-login-form-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+
+.admin-login-form-card {
+  border: none;
+  background-color: transparent;
+}
+
+.admin-login-form-card .form-control {
+  border-radius: 8px;
+}
+
+
+.input-group-text {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-right: none;
+}
+
+
+.admin-login-button {
+  background-color: #2C5F9E;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.admin-login-button:disabled {
+  background-color: #999;
+}
+
+.admin-forgot-password-link {
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+.admin-toggle-password-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #f7f7f7;
+  color: #000000;
+  border: 1px solid #ddd;
+}
+
+.admin-toggle-password-btn:hover {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #f7f7f7 !important;
+  color: #000000 !important;
+  border: 1px solid #ddd !important;
+}
+
+.admin-login-input-field {
+  /* font-size: 16px; */
+  border-radius: 5px;
+  border: 1px solid #ced4da !important;
+}
+
+.admin-login-input-field:focus {
+  box-shadow: none !important;
+  border: 2px solid #2C5F9E !important;
+}
+
+
+@media (max-width: 768px) {
+
+  .admin-login-background {
+    padding: 0 5vw;
+  }
+
+  .admin-login-form-container {
+    max-width: 350px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .admin-login-form-container {
+    max-width: 100%;
+    padding: 1rem; 
+  }
+
+  .input-group-text {
+    padding: 10px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+  }
+}

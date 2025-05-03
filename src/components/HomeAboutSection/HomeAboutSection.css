@@ -1,0 +1,143 @@
+/* General Styling */
+.homepageabout-section {
+  padding: 50px !important;
+}
+
+/* Grid System */
+.homepageabout-row {
+  display: flex;
+  /* align-items: center; */
+  text-align: center;
+}
+
+/* Image */
+.homepageabout-image img {
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+}
+
+/* Content */
+.homepageabout-content {
+  text-align: center; /* Keep content text centered */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align button to the left */
+}
+
+.homepageabout-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.homepageabout-text {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* Button */
+.homepageabout-button {
+  background-color: black !important;
+  color: white !important;
+  padding: 10px 20px !important;
+  border: none !important;
+  margin-top: 10px !important;
+  border-radius: 5px !important;
+}
+
+.homepageabout-button:hover {
+  background-color: #ccc !important;
+  color: black !important;
+  padding: 8px 18px !important;
+  border: 2px solid black !important;
+}
+
+/* Calendar */
+.homepageabout-calendar {
+  text-align: center;
+}
+
+.homepageabout-calendar-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.homepageabout-calendar-container {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-calendar {
+  max-width: 300px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Modal */
+.modal-body img {
+  border-radius: 8px;
+}
+
+/* .homepageabout-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+} */
+
+.homepageabout-close-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #ffffff !important;
+  border: none !important;
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 468px) {
+  .homepageabout-section {
+    padding: 15px !important;
+  }
+  .homepageabout-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .homepageabout-content {
+    align-items: start;
+  }
+
+  .homepageabout-title {
+    text-align: justify;
+  }
+  .homepageabout-image img {
+    height: 250px;
+  }
+
+  .homepageabout-text {
+    text-align: justify;
+  }
+
+  .homepageabout-button {
+    align-self: flex-start;
+    margin-bottom: 20px;
+  }
+}

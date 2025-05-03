@@ -1,0 +1,242 @@
+.cases-input-field {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #878787;
+}
+
+.cases-input-field:focus {
+  box-shadow: none !important;
+  border: 2px solid #2c5f9e !important;
+}
+
+.admin-carousel-heading {
+  text-align: center;
+}
+
+.admin-heading-bg {
+  display: inline-block;
+  background-color: #2c5f9e;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 5px 13px;
+  border-radius: 4px;
+}
+
+.input-names-12 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+
+/* Modal Overlay */
+.modal-backdrop.show {
+  opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Modal Box */
+.modal-content {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Header */
+.modal-header {
+  background-color: #f44336;
+  /* Red header */
+  color: white;
+  border-bottom: none;
+}
+
+/* Modal Title */
+.modal-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Modal Body */
+.modal-body {
+  font-size: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Modal Footer Buttons */
+.modal-footer {
+  justify-content: center;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+.modal-footer .btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.modal-footer .btn:hover {
+  opacity: 0.9;
+}
+
+.edit-btn1,
+.delete-btn1 {
+  border: 1px solid;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 4px;
+  font-size: 16px;
+}
+
+/* Edit Button Style */
+.edit-btn1 {
+  border-color: #0d6efd;
+  color: #0d6efd;
+  background-color: transparent;
+}
+
+.edit-btn1:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* Delete Button Style */
+.delete-btn1 {
+  border-color: #dc3545;
+  color: #dc3545;
+  background-color: transparent;
+}
+
+.delete-btn1:hover {
+  background-color: #dc3545;
+  border-color: #dc3545 !important;
+  color: #fff;
+}
+.td-btn-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.cases-cancel-button {
+  padding: 8px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  height: 41px;
+  background-color: #ed1d1d !important;
+  border: #ed1d1d;
+}
+
+.cases-cancel-button:hover {
+  background-color: #c41414 !important;
+}
+
+.cases-update-button {
+  padding: 8px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  height: 41px;
+  background-color: #29a71a !important;
+  border: #29a71a !important;
+  color: #fff;
+}
+
+.cases-update-button:hover {
+  background-color: #128d04 !important;
+}
+
+.cases-delete-model-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.cases-delete-model-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  border: none;
+}
+
+.cases-yes-delete-model-button {
+  background-color: #ed1d1d;
+  border: none;
+}
+
+.cases-yes-delete-model-button:hover {
+  background-color: #c41414 !important;
+}
+
+.cases-cancel-delete-model-button {
+  background-color: #29a71a;
+  border: none;
+}
+
+.cases-cancel-delete-model-button:hover {
+  background-color: #128d04 !important;
+}
+
+.case-item-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.cases-bordered thead th {
+  background-color: #2c5f9e !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* .event-bordered tbody tr:hover td {
+  background-color: #dff5e5 !important;
+  color: #1e3b1e !important;
+  font-weight: 500;
+} */
+
+
+.description-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: max-height 0.3s ease;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.description-content.clamped {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* change line count as needed */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-height: 4.5em;
+}
+
+.description-content.expanded {
+  max-height: none;
+}
+
+.description-toggle-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  padding: 0;
+  margin-top: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.description-toggle-btn:hover {
+  color: #0066d3;
+}

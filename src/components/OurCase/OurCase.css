@@ -1,0 +1,156 @@
+.ourcasesection-banner {
+  background: url("../../assets/our-cases-banner.png") no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
+
+.ourcasesection-wrapper {
+  background-color: #fff;
+  overflow: hidden !important;
+}
+
+/* Cards */
+.ourcasesection-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  box-shadow: 0 4px 8px rgba(26, 14, 197, 0.4);
+  cursor: pointer;
+}
+
+.ourcasesection-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Smoke Effect */
+.ourcasesection-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.ourcasesection-card:hover::before {
+  opacity: 1;
+}
+
+/* Card Icons */
+.case-icon {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Banner Image */
+.ourcasesection-down-banner {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ourcasesection-down-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ourcasesection_title_1 {
+  font-size: 20px;
+}
+/* Calendar */
+.homepageabout-calendar {
+  text-align: start;
+}
+
+.homepageabout-calendar-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.custom-calendar {
+  max-width: 300px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* News Section */
+.ourcasesection-news {
+  margin-top: 20px;
+}
+
+.news-item {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  margin-bottom: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+.news-item:hover {
+  background: #f1efef;
+  border-radius: 5px;
+}
+
+.news-icon img {
+  width: 65px;
+  height: 65px;
+  border-radius: 5px;
+}
+
+.news-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+.news-content p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.news-comments {
+  font-size: 14px;
+  color: gray;
+}
+
+
+
+.our-case-highcourt-close-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #ffffff !important;
+  border: none !important;
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  cursor: pointer;
+}

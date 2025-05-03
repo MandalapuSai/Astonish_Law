@@ -1,0 +1,66 @@
+.blog-banner {
+  background: url("../../assets/blog-banner.png") no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.blog-banner-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.blog-cart-content {
+  text-align: justify !important;
+}
+
+/* .card-section {
+    padding: 10px !important;
+} */
+
+.card-data-section {
+  border: none;
+  padding: 0px;
+}
+
+.card-title-section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.blog-button {
+  background-color: black;
+  padding: 8px 17px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.blog-button:hover {
+  background-color: #ccc;
+  color: black;
+  padding: 6px 15px;
+  border: 2px solid black;
+}
+
+
+.blog-highcourt-close-btn{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #ffffff !important;
+  border: none !important;
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  cursor: pointer;
+}
